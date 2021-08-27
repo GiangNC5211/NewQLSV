@@ -1,0 +1,30 @@
+<p>Danh sách sinh viên</p>
+<div>
+  <table id="customers" >
+    <tr>
+      <th>Số thứ tự</th>
+      <th>Họ và tên</th>
+      <th>Giới tính</th>
+      <th>Ngày sinh</th>
+      <th>Địa chỉ</th>
+      <th>Quê quán</th>
+      <th>Học phí</th>
+      <th>Xóa</th>
+    </tr>
+    <tr *ngFor="let sinhviens of sinhvien">
+      <td><a [routerLink]="['/singing']" routerLinkActive="router-link-active" >{{ sinhviens?.STT }}</a></td>
+      <td><a [routerLink]="['/singing']" routerLinkActive="router-link-active" >{{ sinhviens?.Name }}</a></td>
+      <td><a [routerLink]="['/singing']" routerLinkActive="router-link-active">{{ sinhviens?.gender }}</a></td>
+      <td><a [routerLink]="['/singing']" routerLinkActive="router-link-active">{{ sinhviens?.dateofbirth }}</a></td>
+      <td><a [routerLink]="['/singing']" routerLinkActive="router-link-active">{{ sinhviens?.add }}</a></td>
+      <td><a [routerLink]="['/singing']" routerLinkActive="router-link-active">{{ sinhviens?.PlaceofBirth }}</a></td>
+      <td><a>{{ sinhviens?.Money }}</a></td>
+      <td><button (click)="removeSinhvien(sinhviens.STT)">Xóa</button></td>
+    </tr>
+  </table>
+  <button [routerLink]="['/themsinhvien']" routerLinkActive="router-link-active" >Thêm sinh viên</button>
+  
+ <!--<app-themsinhvien [sinhvien]="sinhvien"[name]="namenew" [GT]="gendernew" [SN]="dateofbirthnew"[add]="addnew"[DC]="PlaceofBirthnew"
+  ></app-themsinhvien>--> 
+  <br>
+</div>

@@ -1,0 +1,36 @@
+h2{
+    color: rgb(255, 166, 0);
+    text-align: center;
+  }
+  
+
+  .home {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #facc01;
+    bottom: 1;
+    
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: rgb(250, 0, 0);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 20px;
+  }
+  
+  li a:hover {
+    color: white;
+    background-color: #eeaf02;
+    font-weight: bold;
+  }

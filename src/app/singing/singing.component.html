@@ -1,0 +1,31 @@
+<h1> QuanlySV</h1>
+<div class="formcss">
+  <form [formGroup]="singingForm" (ngSubmit)="onSubmit()">
+    <br />
+    <br />
+    <input
+      id="email"
+      type="text"
+      formControlName="email"
+      placeholder="Nhập Email"
+      name="email"
+      [(ngModel)]="username"
+      required
+    />
+    <br /><br />
+    <input
+      id="password"
+      type="text"
+      formControlName="password"
+      placeholder="Nhập mật khẩu"
+      [(ngModel)]="password"
+      name="password"
+      required
+    />
+    <br /><br />
+    <p>
+      <input id="xacnhan" type="checkbox" checked="checked">
+      <label>Đồng ý đăng nhập</label></p>
+    <button id="button" type="submit" (click)="onSubmit()"  [routerLink]="['/home']" routerLinkActive="router-link-active" 
+    >Đăng Nhập</button>
+
